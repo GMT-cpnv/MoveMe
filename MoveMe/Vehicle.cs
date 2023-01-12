@@ -9,14 +9,14 @@ namespace MoveMe
 
         public Vehicle(string brand)
         {
-            throw new NotImplementedException();
+            _brand = brand;
         }
 
         public string Brand
         {
             get
             {
-                throw new NotImplementedException();
+                return _brand;
             }
         }
 
@@ -24,18 +24,18 @@ namespace MoveMe
         {
             get
             {
-                throw new NotImplementedException();
+                return _engineState;
             }
         }
 
         public void StartEngine()
         {
-            throw new NotImplementedException();
+            _engineState = true;
         }
 
         public void StopEngine()
         {
-            throw new NotImplementedException();
+            _engineState = false;
         }
 
         public class VehicleException : Exception { }
